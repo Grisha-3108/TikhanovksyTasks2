@@ -14,6 +14,7 @@
         <module>Annotations</module>
         <module>Reflection</module>
         <module>Generics</module>
+        <module>io</module>
     </modules>
 
 
