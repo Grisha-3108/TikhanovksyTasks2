@@ -47,9 +47,12 @@ public class DataContainer {
         }
         //Создаём файл с текущей датой и временем и записываем туда вызванный метод
         Date date = new Date();
-        String fileName = "1.txt";
+        String fileName = "D:\\sber_tasks\\Tikhanovsky\\io\\src\\main\\log\\" +
+                date.toString().replaceAll("\\s", "").replaceAll(":", "_") +
+                "_логирование.txt";
         try(FileWriter writer = new FileWriter(fileName, false))
         {
+
             //Получаем название метода через стек вызовов
             StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
             //записываем название предыдущего метода
