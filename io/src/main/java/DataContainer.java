@@ -9,6 +9,7 @@ import java.security.spec.ECField;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.apache.commons.io.FileUtils;
+import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,7 +34,7 @@ public class DataContainer {
     //записываем обработанный метод в файл
     public void methodWrite(){
         //Проверяем количество файлов, если их больше 2, то удалем их
-        File dir = new File("./log"); //PATH указывает на директорию
+        File dir = new File("D:\\sber_tasks\\Tikhanovsky\\io\\src\\main\\log"); //PATH указывает на директорию
         File[] arrFiles = dir.listFiles();
         //Удаляем лишние файлы из директории
         try{
@@ -44,6 +45,21 @@ public class DataContainer {
             ex.printStackTrace();
             System.out.println(ex.getMessage());
         }
+        //Создаём файл с текущей датой и временем и записываем туда вызванный метод
+        Date date = new Date();
+        String fileName = "1.txt";
+        try(FileWriter writer = new FileWriter(fileName, false))
+        {
+            //Получаем название метода через стек вызовов
+            StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+            //записываем название предыдущего метода
+            writer.write(stackTraceElements[stackTraceElements.length - 2].toString());
+            //Закрываем файл
+            writer.flush();
+        }
+        catch(IOException ex){
 
+            System.out.println(ex.getMessage());
+        }
     }
 }
