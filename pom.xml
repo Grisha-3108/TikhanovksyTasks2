@@ -11,7 +11,9 @@
     <modules>
         <module>OOP</module>
         <module>Exceptions</module>
+        <module>Annotations</module>
     </modules>
+
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -24,6 +26,12 @@
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
