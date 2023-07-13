@@ -16,6 +16,7 @@
         <module>Generics</module>
         <module>io</module>
         <module>Lambdas</module>
+        <module>multithreading</module>
     </modules>
 
 
