@@ -12,8 +12,8 @@
         <module>OOP</module>
         <module>Exceptions</module>
         <module>Annotations</module>
-        <module>Annotations/Reflection</module>
         <module>Reflection</module>
+        <module>Generics</module>
     </modules>
 
 
