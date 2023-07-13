@@ -17,6 +17,8 @@
         <module>io</module>
         <module>Lambdas</module>
         <module>multithreading</module>
+        <module>Stream</module>
+        <module>Unit-tests</module>
     </modules>
 
 

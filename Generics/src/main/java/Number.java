@@ -14,12 +14,12 @@ public class Number {
 
     //Создадим обобщённый метод для подсчёта чётных элеметов в коллекции
     //Принимает коллекцию
-    public <T> int count(T collection){
-        int col = 0;
-        for(int i = 0; i < collection.getNum().length; ++i)
-            if()
-        return col;
-    }
+//    public <T> int count(T collection){
+//        int col = 0;
+//        for(int i = 0; i < collection.getNum().length; ++i)
+//            if()
+//        return col;
+//    }
 }
 //Наслденики коллекции из массива из 5 элементов
 class Number1{}
