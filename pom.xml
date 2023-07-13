@@ -15,6 +15,7 @@
         <module>Reflection</module>
         <module>Generics</module>
         <module>io</module>
+        <module>Lambdas</module>
     </modules>
 
 
